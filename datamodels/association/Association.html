@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class: Association &mdash; oaklib  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=046fa432"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            oaklib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guide/index.html">The OAK Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../packages/index.html">OAK Library Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Datamodels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../howtos/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">oaklib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Class: Association</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/datamodels/association/Association.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-association">
+<h1>Class: Association<a class="headerlink" href="#class-association" title="Link to this heading"></a></h1>
+<p><em>A generic association between a thing (subject) and another thing (object).</em></p>
+<p>URI: <a class="reference external" href="http://www.w3.org/ns/oa#Annotation">oa:Annotation</a></p>
+<div class="mermaid">
+             classDiagram
+    class Association
+    click Association href &quot;../Association&quot;
+      PositiveOrNegativeAssociation &lt;|-- Association
+        click PositiveOrNegativeAssociation href &quot;../PositiveOrNegativeAssociation&quot;
+      
+      Association : aggregator_knowledge_source
+        
+      Association : comments
+        
+      Association : evidence_type
+        
+      Association : negated
+        
+      Association : object
+        
+      Association : object_closure
+        
+      Association : object_closure_label
+        
+      Association : object_label
+        
+      Association : predicate
+        
+      Association : predicate_label
+        
+      Association : primary_knowledge_source
+        
+      Association : property_values
+        
+          
+    
+    
+    Association --&gt; &quot;*&quot; PropertyValue : property_values
+    click PropertyValue href &quot;../PropertyValue&quot;
+
+        
+      Association : publications
+        
+      Association : subject
+        
+      Association : subject_closure
+        
+      Association : subject_closure_label
+        
+      Association : subject_label
+        
+      Association : supporting_objects
+        
+      
+        </div><section id="inheritance">
+<h2>Inheritance<a class="headerlink" href="#inheritance" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p>
+<ul>
+<li><p><strong>Association</strong></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="slots">
+<h2>Slots<a class="headerlink" href="#slots" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Cardinality and Range</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Inheritance</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="subject.html"><span class="std std-doc">subject</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The thing which the association is about</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="predicate.html"><span class="std std-doc">predicate</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The type of relationship between the subject and object</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="object.html"><span class="std std-doc">object</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>An ontology entity that is associated with the subject</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="property_values.html"><span class="std std-doc">property_values</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="PropertyValue.html"><span class="std std-doc">PropertyValue</span></a></p></td>
+<td><p>Arbitrary key-value pairs with additional information about the association</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="subject_label.html"><span class="std std-doc">subject_label</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p>The label of the thing which the association is about</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="predicate_label.html"><span class="std std-doc">predicate_label</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p>The label of the type of relationship between the subject and object</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="object_label.html"><span class="std std-doc">object_label</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p>The label of the ontology entity that is associated with the subject</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="negated.html"><span class="std std-doc">negated</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="Boolean.html"><span class="std std-doc">Boolean</span></a></p></td>
+<td><p>True if the association is negated - i</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="publications.html"><span class="std std-doc">publications</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The publications that support the association</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="evidence_type.html"><span class="std std-doc">evidence_type</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The type of evidence supporting the association</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="supporting_objects.html"><span class="std std-doc">supporting_objects</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The objects that support the association</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="primary_knowledge_source.html"><span class="std std-doc">primary_knowledge_source</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The primary knowledge source for the association</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="aggregator_knowledge_source.html"><span class="std std-doc">aggregator_knowledge_source</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The knowledge source that aggregated the association</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="subject_closure.html"><span class="std std-doc">subject_closure</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The set of subjects that are related to the subject of the association via th…</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="subject_closure_label.html"><span class="std std-doc">subject_closure_label</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p>The set of subjects that are related to the subject of the association via th…</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="object_closure.html"><span class="std std-doc">object_closure</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="Uriorcurie.html"><span class="std std-doc">Uriorcurie</span></a></p></td>
+<td><p>The set of objects that are related to the object of the association via the …</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="object_closure_label.html"><span class="std std-doc">object_closure_label</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p>The set of objects that are related to the object of the association via the …</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="comments.html"><span class="std std-doc">comments</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p>Comments about the association</p></td>
+<td><p><a class="reference internal" href="PositiveOrNegativeAssociation.html"><span class="std std-doc">PositiveOrNegativeAssociation</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="usages">
+<h2>Usages<a class="headerlink" href="#usages" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>used by</p></th>
+<th class="head"><p>used in</p></th>
+<th class="head"><p>type</p></th>
+<th class="head"><p>used</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="RollupGroup.html"><span class="std std-doc">RollupGroup</span></a></p></td>
+<td><p><a class="reference internal" href="associations.html"><span class="std std-doc">associations</span></a></p></td>
+<td><p>range</p></td>
+<td><p><a class="reference internal" href="#"><span class="std std-doc">Association</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="PairwiseCoAssociation.html"><span class="std std-doc">PairwiseCoAssociation</span></a></p></td>
+<td><p><a class="reference internal" href="associations_for_subjects_in_common.html"><span class="std std-doc">associations_for_subjects_in_common</span></a></p></td>
+<td><p>range</p></td>
+<td><p><a class="reference internal" href="#"><span class="std std-doc">Association</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="identifier-and-mapping-information">
+<h2>Identifier and Mapping Information<a class="headerlink" href="#identifier-and-mapping-information" title="Link to this heading"></a></h2>
+<section id="schema-source">
+<h3>Schema Source<a class="headerlink" href="#schema-source" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>from schema: https://w3id.org/oak/association</p></li>
+</ul>
+</section>
+</section>
+<section id="mappings">
+<h2>Mappings<a class="headerlink" href="#mappings" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Mapping Type</p></th>
+<th class="head"><p>Mapped Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>self</p></td>
+<td><p>oa:Annotation</p></td>
+</tr>
+<tr class="row-odd"><td><p>native</p></td>
+<td><p>ontoassoc:Association</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="linkml-source">
+<h2>LinkML Source<a class="headerlink" href="#linkml-source" title="Link to this heading"></a></h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<section id="direct">
+<h3>Direct<a class="headerlink" href="#direct" title="Link to this heading"></a></h3>
+<details>
+```yaml
+name: Association
+description: A generic association between a thing (subject) and another thing (object).
+from_schema: https://w3id.org/oak/association
+is_a: PositiveOrNegativeAssociation
+slot_usage:
+  negated:
+    name: negated
+    equals_expression: 'False'
+class_uri: oa:Annotation
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;/details&gt;
+
+### Induced
+
+&lt;details&gt;
+```yaml
+name: Association
+description: A generic association between a thing (subject) and another thing (object).
+from_schema: https://w3id.org/oak/association
+is_a: PositiveOrNegativeAssociation
+slot_usage:
+  negated:
+    name: negated
+    equals_expression: &#39;False&#39;
+attributes:
+  subject:
+    name: subject
+    description: The thing which the association is about.
+    comments:
+    - it is conventional for the subject to be the &quot;entity&quot; and the object to be the
+      ontological descriptor
+    from_schema: https://w3id.org/oak/association
+    exact_mappings:
+    - oa:hasBody
+    rank: 1000
+    slot_uri: rdf:subject
+    alias: subject
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    - AssociationChange
+    slot_group: core_triple
+    range: uriorcurie
+  predicate:
+    name: predicate
+    description: The type of relationship between the subject and object.
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    slot_uri: rdf:predicate
+    alias: predicate
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    - PropertyValue
+    slot_group: core_triple
+    range: uriorcurie
+  object:
+    name: object
+    description: An ontology entity that is associated with the subject.
+    comments:
+    - it is conventional for the subject to be the &quot;entity&quot; and the object to be the
+      ontological descriptor
+    from_schema: https://w3id.org/oak/association
+    exact_mappings:
+    - oa:hasTarget
+    rank: 1000
+    slot_uri: rdf:object
+    alias: object
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    slot_group: core_triple
+    range: uriorcurie
+  property_values:
+    name: property_values
+    description: Arbitrary key-value pairs with additional information about the association
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    alias: property_values
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: PropertyValue
+    multivalued: true
+    inlined: true
+  subject_label:
+    name: subject_label
+    description: The label of the thing which the association is about.
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    mixins:
+    - denormalized_slot
+    slot_uri: sssom:subject_label
+    alias: subject_label
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: string
+  predicate_label:
+    name: predicate_label
+    description: The label of the type of relationship between the subject and object.
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    mixins:
+    - denormalized_slot
+    slot_uri: sssom:predicate_label
+    alias: predicate_label
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: string
+  object_label:
+    name: object_label
+    description: The label of the ontology entity that is associated with the subject.
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    mixins:
+    - denormalized_slot
+    slot_uri: sssom:object_label
+    alias: object_label
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: string
+  negated:
+    name: negated
+    description: True if the association is negated - i.e the core triple is not true.
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    alias: negated
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: boolean
+    equals_expression: &#39;False&#39;
+  publications:
+    name: publications
+    description: The publications that support the association
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    slot_uri: biolink:publications
+    alias: publications
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    - AssociationChange
+    range: uriorcurie
+    multivalued: true
+  evidence_type:
+    name: evidence_type
+    description: The type of evidence supporting the association
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    alias: evidence_type
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: uriorcurie
+  supporting_objects:
+    name: supporting_objects
+    description: The objects that support the association
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    alias: supporting_objects
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: uriorcurie
+    multivalued: true
+  primary_knowledge_source:
+    name: primary_knowledge_source
+    description: The primary knowledge source for the association
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    slot_uri: biolink:primary_knowledge_source
+    alias: primary_knowledge_source
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    - ParserConfiguration
+    - AssociationChange
+    range: uriorcurie
+  aggregator_knowledge_source:
+    name: aggregator_knowledge_source
+    description: The knowledge source that aggregated the association
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    slot_uri: biolink:aggregator_knowledge_source
+    alias: aggregator_knowledge_source
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    - ParserConfiguration
+    - AssociationChange
+    range: uriorcurie
+  subject_closure:
+    name: subject_closure
+    description: The set of subjects that are related to the subject of the association
+      via the closure predicates
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    alias: subject_closure
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: uriorcurie
+    multivalued: true
+  subject_closure_label:
+    name: subject_closure_label
+    description: The set of subjects that are related to the subject of the association
+      via the closure predicates
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    alias: subject_closure_label
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: string
+    multivalued: true
+  object_closure:
+    name: object_closure
+    description: The set of objects that are related to the object of the association
+      via the closure predicates
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    alias: object_closure
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: uriorcurie
+    multivalued: true
+  object_closure_label:
+    name: object_closure_label
+    description: The set of objects that are related to the object of the association
+      via the closure predicates
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    alias: object_closure_label
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: string
+    multivalued: true
+  comments:
+    name: comments
+    description: Comments about the association
+    from_schema: https://w3id.org/oak/association
+    rank: 1000
+    slot_uri: rdfs:comment
+    alias: comments
+    owner: Association
+    domain_of:
+    - PositiveOrNegativeAssociation
+    range: string
+    multivalued: true
+class_uri: oa:Annotation
+
+</pre></div>
+</div>
+</details></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2026, OAK developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

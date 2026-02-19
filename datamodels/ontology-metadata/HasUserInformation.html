@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class: HasUserInformation &mdash; oaklib  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../../_static/copybutton.js?v=046fa432"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            oaklib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guide/index.html">The OAK Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../packages/index.html">OAK Library Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Datamodels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../howtos/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq/index.html">FAQ</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">oaklib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Class: HasUserInformation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/datamodels/ontology-metadata/HasUserInformation.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-hasuserinformation">
+<h1>Class: HasUserInformation<a class="headerlink" href="#class-hasuserinformation" title="Link to this heading"></a></h1>
+<p>URI: <a class="reference external" href="https://w3id.org/oak/ontology-metadata/HasUserInformation">omoschema:HasUserInformation</a></p>
+<div class="mermaid">
+             classDiagram
+    class HasUserInformation
+    click HasUserInformation href &quot;../HasUserInformation&quot;
+      AnnotationPropertyMixin &lt;|-- HasUserInformation
+        click AnnotationPropertyMixin href &quot;../AnnotationPropertyMixin&quot;
+      
+
+      HasUserInformation &lt;|-- Term
+        click Term href &quot;../Term&quot;
+      
+      
+      HasUserInformation : comment
+        
+      HasUserInformation : curator_note
+        
+      HasUserInformation : depicted_by
+        
+          
+    
+    
+    HasUserInformation --&gt; &quot;*&quot; Image : depicted_by
+    click Image href &quot;../Image&quot;
+
+        
+      HasUserInformation : example_of_usage
+        
+      HasUserInformation : has_curation_status
+        
+      HasUserInformation : image
+        
+          
+    
+    
+    HasUserInformation --&gt; &quot;0..1&quot; Thing : image
+    click Thing href &quot;../Thing&quot;
+
+        
+      HasUserInformation : page
+        
+      HasUserInformation : seeAlso
+        
+          
+    
+    
+    HasUserInformation --&gt; &quot;*&quot; Thing : seeAlso
+    click Thing href &quot;../Thing&quot;
+
+        
+      
+        </div><section id="inheritance">
+<h2>Inheritance<a class="headerlink" href="#inheritance" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="AnnotationPropertyMixin.html"><span class="std std-doc">AnnotationPropertyMixin</span></a></p>
+<ul>
+<li><p><strong>HasUserInformation</strong></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="slots">
+<h2>Slots<a class="headerlink" href="#slots" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Cardinality and Range</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Inheritance</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="comment.html"><span class="std std-doc">comment</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p></p></td>
+<td><p>direct</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="seeAlso.html"><span class="std std-doc">seeAlso</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="Thing.html"><span class="std std-doc">Thing</span></a></p></td>
+<td><p></p></td>
+<td><p>direct</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="image.html"><span class="std std-doc">image</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="Thing.html"><span class="std std-doc">Thing</span></a></p></td>
+<td><p></p></td>
+<td><p>direct</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="example_of_usage.html"><span class="std std-doc">example_of_usage</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p></p></td>
+<td><p>direct</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="curator_note.html"><span class="std std-doc">curator_note</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p></p></td>
+<td><p>direct</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="has_curation_status.html"><span class="std std-doc">has_curation_status</span></a></p></td>
+<td><p>0..1 <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p></p></td>
+<td><p>direct</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="depicted_by.html"><span class="std std-doc">depicted_by</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="Image.html"><span class="std std-doc">Image</span></a></p></td>
+<td><p></p></td>
+<td><p>direct</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="page.html"><span class="std std-doc">page</span></a></p></td>
+<td><p>* <br/> <a class="reference internal" href="String.html"><span class="std std-doc">String</span></a></p></td>
+<td><p></p></td>
+<td><p>direct</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="mixin-usage">
+<h2>Mixin Usage<a class="headerlink" href="#mixin-usage" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>mixed into</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="Term.html"><span class="std std-doc">Term</span></a></p></td>
+<td><p>A NamedThing that includes classes, properties, but not ontologies</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="identifier-and-mapping-information">
+<h2>Identifier and Mapping Information<a class="headerlink" href="#identifier-and-mapping-information" title="Link to this heading"></a></h2>
+<section id="schema-source">
+<h3>Schema Source<a class="headerlink" href="#schema-source" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>from schema: https://w3id.org/oak/ontology-metadata</p></li>
+</ul>
+</section>
+</section>
+<section id="mappings">
+<h2>Mappings<a class="headerlink" href="#mappings" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Mapping Type</p></th>
+<th class="head"><p>Mapped Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>self</p></td>
+<td><p>omoschema:HasUserInformation</p></td>
+</tr>
+<tr class="row-odd"><td><p>native</p></td>
+<td><p>omoschema:HasUserInformation</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="linkml-source">
+<h2>LinkML Source<a class="headerlink" href="#linkml-source" title="Link to this heading"></a></h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+<section id="direct">
+<h3>Direct<a class="headerlink" href="#direct" title="Link to this heading"></a></h3>
+<details>
+```yaml
+name: HasUserInformation
+from_schema: https://w3id.org/oak/ontology-metadata
+is_a: AnnotationPropertyMixin
+mixin: true
+slots:
+- comment
+- seeAlso
+- image
+- example_of_usage
+- curator_note
+- has_curation_status
+- depicted_by
+- page
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;/details&gt;
+
+### Induced
+
+&lt;details&gt;
+```yaml
+name: HasUserInformation
+from_schema: https://w3id.org/oak/ontology-metadata
+is_a: AnnotationPropertyMixin
+mixin: true
+attributes:
+  comment:
+    name: comment
+    comments:
+    - in obo format, a term cannot have more than one comment
+    from_schema: https://w3id.org/oak/ontology-metadata
+    rank: 1000
+    is_a: informative_property
+    slot_uri: rdfs:comment
+    alias: comment
+    owner: HasUserInformation
+    domain_of:
+    - HasUserInformation
+    - Ontology
+    - Axiom
+    range: string
+    multivalued: true
+  seeAlso:
+    name: seeAlso
+    todos:
+    - restrict range
+    from_schema: https://w3id.org/oak/ontology-metadata
+    rank: 1000
+    slot_uri: rdfs:seeAlso
+    alias: seeAlso
+    owner: HasUserInformation
+    domain_of:
+    - HasUserInformation
+    - Axiom
+    range: Thing
+    multivalued: true
+  image:
+    name: image
+    from_schema: https://w3id.org/oak/ontology-metadata
+    rank: 1000
+    is_a: informative_property
+    slot_uri: sdo:image
+    alias: image
+    owner: HasUserInformation
+    domain_of:
+    - HasUserInformation
+    range: Thing
+  example_of_usage:
+    name: example_of_usage
+    in_subset:
+    - allotrope permitted profile
+    from_schema: https://w3id.org/oak/ontology-metadata
+    exact_mappings:
+    - skos:example
+    rank: 1000
+    is_a: informative_property
+    slot_uri: IAO:0000112
+    alias: example_of_usage
+    owner: HasUserInformation
+    domain_of:
+    - HasUserInformation
+    range: string
+    multivalued: true
+  curator_note:
+    name: curator_note
+    from_schema: https://w3id.org/oak/ontology-metadata
+    rank: 1000
+    is_a: provenance_property
+    slot_uri: IAO:0000232
+    alias: curator_note
+    owner: HasUserInformation
+    domain_of:
+    - HasUserInformation
+    range: string
+    multivalued: true
+  has_curation_status:
+    name: has_curation_status
+    from_schema: https://w3id.org/oak/ontology-metadata
+    rank: 1000
+    is_a: informative_property
+    slot_uri: IAO:0000114
+    alias: has_curation_status
+    owner: HasUserInformation
+    domain_of:
+    - HasUserInformation
+    range: string
+  depicted_by:
+    name: depicted_by
+    from_schema: https://w3id.org/oak/ontology-metadata
+    rank: 1000
+    is_a: informative_property
+    slot_uri: foaf:depicted_by
+    alias: depicted_by
+    owner: HasUserInformation
+    domain_of:
+    - HasUserInformation
+    range: Image
+    multivalued: true
+  page:
+    name: page
+    from_schema: https://w3id.org/oak/ontology-metadata
+    rank: 1000
+    is_a: informative_property
+    slot_uri: foaf:page
+    alias: page
+    owner: HasUserInformation
+    domain_of:
+    - HasUserInformation
+    range: string
+    multivalued: true
+
+</pre></div>
+</div>
+</details></section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2026, OAK developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

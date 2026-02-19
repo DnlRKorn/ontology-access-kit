@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The OAK Guide &mdash; oaklib  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=046fa432"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="OAK Basics" href="basics.html" />
+    <link rel="prev" title="Part 8: Applying Changes to Ontologies" href="../intro/tutorial08.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            oaklib
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The OAK Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basics.html">OAK Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curies-and-uris.html">Identifying entities: CURIEs and URIs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="primary-labels.html">Primary Labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aliases.html">Aliases and Synonyms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mappings.html">Mappings and Cross-References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="obsoletion.html">Obsoletion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="relationships-and-graphs.html">Relationships and Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="associations.html">Associations and Curated Annotations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enrichment.html">Enrichment and Over-Representation Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="similarity.html">Computing Similarity between Entities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="learning-more.html">Learning More</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../packages/index.html">OAK Library Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cli.html">Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datamodels/index.html">Datamodels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../howtos/index.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq/index.html">FAQ</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">oaklib</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">The OAK Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/guide/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="the-oak-guide">
+<span id="guide"></span><h1>The OAK Guide<a class="headerlink" href="#the-oak-guide" title="Link to this heading"></a></h1>
+<p>This guide provides an explanation of basic concepts in OAK, how
+to use both the Python library, and the command line.</p>
+<p>For a quick introduction, see the <a class="reference internal" href="../intro/index.html#tutorial"><span class="std std-ref">Tutorial</span></a></p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basics.html">OAK Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basics.html#what-is-an-ontology-and-why-would-i-want-to-access-one">What is an ontology and why would I want to access one?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html#ontology-languages-standards-and-formats">Ontology languages, standards, and formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html#core-oak-concepts">Core OAK concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="curies-and-uris.html">Identifying entities: CURIEs and URIs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="curies-and-uris.html#prefix-maps">Prefix maps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curies-and-uris.html#querying-prefixmaps">Querying prefixmaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curies-and-uris.html#non-default-prefixmaps">Non-default prefixmaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curies-and-uris.html#structure-of-identifiers">Structure of identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curies-and-uris.html#further-reading">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="primary-labels.html">Primary Labels</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="primary-labels.html#looking-up-labels">Looking up labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="primary-labels.html#custom-label-annotation-properties">Custom label annotation properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="primary-labels.html#multilingual-ontologies">Multilingual ontologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="primary-labels.html#other-edge-cases">Other edge cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="primary-labels.html#further-reading">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aliases.html">Aliases and Synonyms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aliases.html#use-cases">Use Cases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="aliases.html#search">Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aliases.html#text-mining-and-nlp">Text mining and NLP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aliases.html#different-aliases-for-different-communities">Different aliases for different communities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aliases.html#different-languages">Different Languages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="aliases.html#different-approaches-to-representing-synonym-metadata">Different approaches to representing synonym metadata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aliases.html#representation-of-synonyms-in-oak">Representation of synonyms in OAK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="aliases.html#simple-core-model">Simple Core Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aliases.html#obo-graph-data-model">Obo Graph Data Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mappings.html">Mappings and Cross-References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mappings.html#sssom">SSSOM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mappings.html#mappings-in-oak">Mappings in OAK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mappings.html#in-python">In Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mappings.html#directionality-of-mappings">Directionality of mappings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mappings.html#support-for-sssom">Support for SSSOM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mappings.html#generating-mappings">Generating Mappings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mappings.html#further-reading">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="obsoletion.html">Obsoletion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="obsoletion.html#looking-up-obsoleted-entities">Looking up obsoleted entities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="obsoletion.html#conventions-and-standards">Conventions and standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="obsoletion.html#obsolete-entities-should-not-be-in-the-signature-of-any-logical-axiom">obsolete entities should not be in the signature of any logical axiom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="obsoletion.html#obsolete-entities-should-be-accompanied-by-metadata-that-provides-additional-context-for-humans-and-machines">obsolete entities should be accompanied by metadata that provides additional context for humans and machines</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="obsoletion.html#merged-entities">Merged entities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="obsoletion.html#further-reading">Further Reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="relationships-and-graphs.html">Relationships and Graphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="relationships-and-graphs.html#exploring-relationships">Exploring relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="relationships-and-graphs.html#graph-traversal-and-relation-graph-reasoning">Graph Traversal and Relation Graph Reasoning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="relationships-and-graphs.html#graph-traversal-strategies">Graph Traversal Strategies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relationships-and-graphs.html#examples-of-where-entailment-yields-more">Examples of where entailment yields more</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relationships-and-graphs.html#examples-of-where-graph-traversal-yields-more-ancestors-than-entailment">Examples of where graph traversal yields more ancestors than entailment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relationships-and-graphs.html#which-strategy-should-i-use">Which strategy should I use?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relationships-and-graphs.html#a-note-on-entailed-direct-edges">A note on entailed direct edges</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="relationships-and-graphs.html#further-notes-on-owl-and-graph-projection">Further notes on OWL and Graph Projection</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="associations.html">Associations and Curated Annotations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="associations.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="associations.html#association-support-in-oak">Association support in OAK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="associations.html#data-model">Data Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="associations.html#selecting-association-sources">Selecting association sources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="associations.html#further-reading">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="enrichment.html">Enrichment and Over-Representation Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enrichment.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enrichment.html#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="enrichment.html#statistical-significance-in-enrichment">Statistical Significance in Enrichment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enrichment.html#redundancy-filtering">Redundancy Filtering</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="enrichment.html#performing-enrichment-analysis">Performing Enrichment Analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="enrichment.html#using-the-command-line">Using the Command Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enrichment.html#visualizing-results">Visualizing Results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enrichment.html#programmatic-interface">Programmatic Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="enrichment.html#interpreting-results">Interpreting Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enrichment.html#advanced-options">Advanced Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="enrichment.html#pseudo-enrichment">Pseudo-enrichment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enrichment.html#custom-background-sets">Custom Background Sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enrichment.html#cross-ontology-enrichment">Cross-Ontology Enrichment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="enrichment.html#companion-notebooks">Companion Notebooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enrichment.html#further-reading">Further Reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="similarity.html">Computing Similarity between Entities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="similarity.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="similarity.html#concepts">Concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#jaccard-similarity">Jaccard Similarity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#jaccard-similarity-of-ontology-terms">Jaccard Similarity of ontology terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#information-content">Information Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#ensemble-scoring-of-term-pairs">Ensemble Scoring of term pairs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#other-similarity-measures">Other similarity measures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#aggregate-measures-for-comparing-entities">Aggregate measures for comparing entities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#vector-based-approaches">Vector-based approaches</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="similarity.html#implementations">Implementations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#default-implementation">Default Implementation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#ubergraph">Ubergraph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="similarity.html#semsimian">Semsimian</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="similarity.html#companion-notebooks">Companion Notebooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="similarity.html#further-reading">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="learning-more.html">Learning More</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../intro/tutorial08.html" class="btn btn-neutral float-left" title="Part 8: Applying Changes to Ontologies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="basics.html" class="btn btn-neutral float-right" title="OAK Basics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2026, OAK developers.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
