@@ -23,19 +23,19 @@ URI: [oio:created_by](http://www.geneontology.org/formats/oboInOwl#created_by)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
-| [Axiom](Axiom.md) | A logical or non-logical statement |  no  |
+| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
+| [Image](Image.md) |  |  no  |
 | [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
+| [Axiom](Axiom.md) | A logical or non-logical statement |  no  |
+| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
 | [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
 | [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
 | [AnnotationProperty](AnnotationProperty.md) | A property used in non-logical axioms |  no  |
 | [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
-| [Property](Property.md) |  |  no  |
-| [Agent](Agent.md) |  |  no  |
-| [Class](Class.md) |  |  no  |
-| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
-| [Image](Image.md) |  |  no  |
 | [HasProvenance](HasProvenance.md) |  |  no  |
+| [Agent](Agent.md) |  |  no  |
+| [Property](Property.md) |  |  no  |
+| [Class](Class.md) |  |  no  |
 
 
 
