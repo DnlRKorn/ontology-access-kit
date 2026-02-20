@@ -24,18 +24,18 @@ URI: [oio:created_by](http://www.geneontology.org/formats/oboInOwl#created_by)
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
 | [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
+| [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
 | [Agent](Agent.md) |  |  no  |
-| [Property](Property.md) |  |  no  |
-| [Axiom](Axiom.md) | A logical or non-logical statement |  no  |
-| [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
-| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
-| [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
+| [Class](Class.md) |  |  no  |
 | [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
 | [Image](Image.md) |  |  no  |
-| [HasProvenance](HasProvenance.md) |  |  no  |
-| [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
+| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
+| [Property](Property.md) |  |  no  |
 | [AnnotationProperty](AnnotationProperty.md) | A property used in non-logical axioms |  no  |
-| [Class](Class.md) |  |  no  |
+| [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
+| [HasProvenance](HasProvenance.md) |  |  no  |
+| [Axiom](Axiom.md) | A logical or non-logical statement |  no  |
+| [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
 
 
 
