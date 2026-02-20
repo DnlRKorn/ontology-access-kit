@@ -5,7 +5,7 @@ description = "Ontology Access Kit: Python library for common ontology operation
 authors = [
     {name="Chris Mungall", email="cjm@berkeleybop.org"}
 ]
-requires-python = ">=3.9,<4,<3.13"# TODO: needs to be downgraded below 3.13 because semsimian doesn't have a 3.13 wheel.
+requires-python = ">=3.9,<4"
 license = "Apache-2.0"
 readme = "README.md"
 
@@ -44,6 +44,8 @@ dependencies = [
     "ruamel.yaml",
     "setuptools<82", #TODO: This currently needs to be downgraded because we still import pkg_resources, which is no longer supported. Should be replaced by importlib (https://setuptools.pypa.io/en/latest/history.html#v82-0-0)
     "regex", #TODO: regex is usually a python built-in but regex.sub will fail under weird circumstances unless this is imported.
+    "fastobo==0.14.1",
+    "greenlet",
 ]
 
 [dependency-groups]
@@ -63,7 +65,6 @@ dev = [
     "tox",
     "seaborn>=0.12.2,<1",
     "pip>=24.0,<25",
-    "pronto<2.6", #TODO: This needs to be downgraded to handle a format error in tests/input/interneuron.obo
 ]
 
 [build-system]
@@ -95,7 +96,9 @@ llm = [
     "html2text",
 ]
 seaborn = ["seaborn"]
-semsimian = ["semsimian>=0.2.18"]
+
+[tool.uv.sources]
+fastobo = { git = "https://github.com/fastobo/fastobo-py.git", rev = "master" }
 
 [tool.black]
 line-length = 100
