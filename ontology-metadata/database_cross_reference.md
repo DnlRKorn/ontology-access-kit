@@ -23,19 +23,19 @@ URI: [oio:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
 | [Agent](Agent.md) |  |  no  |
 | [Property](Property.md) |  |  no  |
+| [HasMappings](HasMappings.md) |  |  no  |
+| [Axiom](Axiom.md) | A logical or non-logical statement |  yes  |
+| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
+| [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
+| [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
+| [Image](Image.md) |  |  no  |
+| [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
 | [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
 | [AnnotationProperty](AnnotationProperty.md) | A property used in non-logical axioms |  no  |
-| [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
-| [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
-| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
-| [Axiom](Axiom.md) | A logical or non-logical statement |  yes  |
-| [Image](Image.md) |  |  no  |
-| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
-| [HasMappings](HasMappings.md) |  |  no  |
 | [Class](Class.md) |  |  no  |
-| [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
 
 
 
