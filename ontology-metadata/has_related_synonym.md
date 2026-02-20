@@ -18,18 +18,18 @@ URI: [oio:hasRelatedSynonym](http://www.geneontology.org/formats/oboInOwl#hasRel
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
+| [Agent](Agent.md) |  |  no  |
+| [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
 | [AnnotationProperty](AnnotationProperty.md) | A property used in non-logical axioms |  no  |
-| [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
-| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
 | [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
+| [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
+| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
 | [Image](Image.md) |  |  no  |
+| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
 | [HasSynonyms](HasSynonyms.md) | a mixin for a class whose members can have synonyms |  no  |
 | [Property](Property.md) |  |  no  |
-| [Agent](Agent.md) |  |  no  |
-| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
-| [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
 | [Class](Class.md) |  |  no  |
-| [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
+| [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
 
 
 
