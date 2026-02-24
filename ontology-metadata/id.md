@@ -28,19 +28,19 @@ URI: [omoschema:id](https://w3id.org/oak/ontology-metadata/id)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Image](Image.md) |  |  no  |
-| [NamedObject](NamedObject.md) | Anything with an IRI |  no  |
-| [HomoSapiens](HomoSapiens.md) | An individual human being |  yes  |
-| [Ontology](Ontology.md) | An OWL ontology |  no  |
-| [Property](Property.md) |  |  no  |
-| [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
-| [Agent](Agent.md) |  |  yes  |
-| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
-| [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
 | [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
-| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
-| [AnnotationProperty](AnnotationProperty.md) | A property used in non-logical axioms |  no  |
+| [NamedObject](NamedObject.md) | Anything with an IRI |  no  |
+| [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
 | [Class](Class.md) |  |  no  |
+| [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
+| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
+| [HomoSapiens](HomoSapiens.md) | An individual human being |  yes  |
+| [Property](Property.md) |  |  no  |
+| [Ontology](Ontology.md) | An OWL ontology |  no  |
+| [Image](Image.md) |  |  no  |
+| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
+| [AnnotationProperty](AnnotationProperty.md) | A property used in non-logical axioms |  no  |
+| [Agent](Agent.md) |  |  yes  |
 
 
 

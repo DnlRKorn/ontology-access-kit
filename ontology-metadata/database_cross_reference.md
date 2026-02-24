@@ -23,19 +23,19 @@ URI: [oio:hasDbXref](http://www.geneontology.org/formats/oboInOwl#hasDbXref)
 
 | Name | Description | Modifies Slot |
 | --- | --- | --- |
-| [Image](Image.md) |  |  no  |
-| [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
-| [HasMappings](HasMappings.md) |  |  no  |
-| [Property](Property.md) |  |  no  |
-| [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
-| [Agent](Agent.md) |  |  no  |
-| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
+| [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
 | [NamedIndividual](NamedIndividual.md) | An instance that has a IRI |  no  |
 | [Axiom](Axiom.md) | A logical or non-logical statement |  yes  |
-| [Term](Term.md) | A NamedThing that includes classes, properties, but not ontologies |  no  |
-| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
-| [AnnotationProperty](AnnotationProperty.md) | A property used in non-logical axioms |  no  |
 | [Class](Class.md) |  |  no  |
+| [ObjectProperty](ObjectProperty.md) | A property that connects two objects in logical axioms |  no  |
+| [Subset](Subset.md) | A collection of terms grouped for some purpose |  no  |
+| [HomoSapiens](HomoSapiens.md) | An individual human being |  no  |
+| [Property](Property.md) |  |  no  |
+| [HasMappings](HasMappings.md) |  |  no  |
+| [Image](Image.md) |  |  no  |
+| [TransitiveProperty](TransitiveProperty.md) | An ObjectProperty with the property of transitivity |  no  |
+| [AnnotationProperty](AnnotationProperty.md) | A property used in non-logical axioms |  no  |
+| [Agent](Agent.md) |  |  no  |
 
 
 
